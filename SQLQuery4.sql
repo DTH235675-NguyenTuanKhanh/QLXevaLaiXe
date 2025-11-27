@@ -1,0 +1,3 @@
+﻿SELECT*FROM Taixe
+SELECT*FROM Xe
+SELECT*FROM Phancong
