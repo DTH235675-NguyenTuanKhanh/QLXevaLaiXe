@@ -299,6 +299,7 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label1);
             this.Name = "LichDangKiemcs";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LichDangKiemcs";
             this.Load += new System.EventHandler(this.LichDangKiemcs_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgrDanhSachDangKiem)).EndInit();

@@ -366,6 +366,7 @@
             this.Controls.Add(this.txtHangXe);
             this.Controls.Add(this.label1);
             this.Name = "Phancong";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phancong";
             this.Load += new System.EventHandler(this.Phancong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgrdanhsach)).EndInit();

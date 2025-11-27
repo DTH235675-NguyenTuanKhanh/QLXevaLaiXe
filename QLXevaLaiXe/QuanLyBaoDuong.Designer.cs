@@ -311,6 +311,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "QuanLyBaoDuong";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuanLyBaoDuong";
             this.Load += new System.EventHandler(this.QuanLyBaoDuong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgrbd)).EndInit();

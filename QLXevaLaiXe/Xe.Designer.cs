@@ -312,6 +312,7 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label1);
             this.Name = "Xe";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Xe";
             this.Load += new System.EventHandler(this.Xe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgrdsxe)).EndInit();

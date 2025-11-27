@@ -107,6 +107,7 @@ namespace QLXevaLaiXe
             SetInputControlsEnabled(false);
             SetButtonStates(false);
             txtMaDangKy.Enabled = true;
+            cboMaXe.SelectedIndexChanged += cboXe_SelectedIndexChanged;
         }
 
         private void LichDangKiemcs_Load(object sender, EventArgs e)
@@ -117,7 +118,40 @@ namespace QLXevaLaiXe
 
         private void cboXe_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cboMaXe.SelectedIndex == -1) return;
 
+            string sql = "SELECT namsx FROM Xe WHERE maxe = @maxe";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("@maxe", cboMaXe.Text);
+
+            try
+            {
+                conn.Open();
+                object result = cmd.ExecuteScalar();
+
+                if (result != null)
+                {
+                    int namSX = Convert.ToInt32(result);
+                    int soNamSuDung = DateTime.Now.Year - namSX;
+
+                    if (soNamSuDung < 10)
+                    {
+                        dtpNgayHetHan.Value = dtpNgayDangKiem.Value.AddYears(3);
+                    }
+                    else
+                    {
+                        dtpNgayHetHan.Value = dtpNgayDangKiem.Value.AddYears(1);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi lấy năm sản xuất: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
 
         private void btnThem_Click(object sender, EventArgs e)

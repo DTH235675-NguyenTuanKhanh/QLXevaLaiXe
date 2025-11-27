@@ -152,6 +152,7 @@
             this.Controls.Add(this.btnx);
             this.Controls.Add(this.label1);
             this.Name = "MenuChinh";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuChinh";
             this.Load += new System.EventHandler(this.MenuChinh_Load);
             this.ResumeLayout(false);

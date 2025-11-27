@@ -313,6 +313,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "QuanLyViPham";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuanLyViPham";
             this.Load += new System.EventHandler(this.QuanLyViPham_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgrViPham)).EndInit();

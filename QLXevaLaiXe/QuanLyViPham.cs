@@ -61,7 +61,8 @@ namespace QLXevaLaiXe
             cboLoaiViPham.Items.Add("Vượt đèn đỏ");
             cboLoaiViPham.Items.Add("Chạy quá tốc độ");
             cboLoaiViPham.Items.Add("Đi sai làn");
-            cboLoaiViPham.Items.Add("Không đội mũ bảo hiểm");
+            cboLoaiViPham.Items.Add("Đậu xe sai quy định");
+            cboLoaiViPham.Items.Add("Có nồng độ cồn khi lái xe");
             // cboLoaiViPham.Items.Add("Vi phạm khác"); 
         }
 

@@ -347,6 +347,7 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label1);
             this.Name = "Taixe";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Taixe";
             this.Load += new System.EventHandler(this.Taixe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgrTaixe)).EndInit();
